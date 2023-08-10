@@ -1,0 +1,55 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:57:p, par l {seq t {par t {comp UserField::l::325:x, seq l {comp label2:::p::p, space :0:267:x}, comp PassField::t::325:x, comp Login::l::325:x}, space :p:63:p}, seq {par l {comp label3:::p::p, comp label1:::p::p}, space :0:326:x}}}}"
+			"$verticalGroup": "par l {seq t {space ::372:x, comp label3:::p::p, space s:::p, comp label1:::p::p, space u:::p, comp UserField:::p:38:p, space s:::p, comp label2:::p::p, space :p:12:p, comp PassField:::p:40:p, space s:::p, comp Login:::p:46:p, space :p:74:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "UserField"
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"border": new javax.swing.border.EmptyBorder( 5, 10, 5, 10 )
+				"text": "Username"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Username:"
+				"foreground": &Color0 new java.awt.Color( 255, 255, 255, 255 )
+				"font": &Font0 new java.awt.Font( "Segoe UI Light", 0, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Password:"
+				"foreground": #Color0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Login"
+				"text": "Login"
+				"background": new java.awt.Color( 36, 36, 36, 255 )
+				"focusPainted": false
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Segoe UI", 0, 16 )
+				"border": new javax.swing.border.EmptyBorder( 5, 10, 5, 10 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Login", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "PassField"
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"border": new javax.swing.border.EmptyBorder( 5, 10, 5, 10 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Sign In:"
+				"foreground": #Color0
+				"font": new java.awt.Font( "Segoe UI", 0, 16 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 445, 710 )
+		} )
+	}
+}

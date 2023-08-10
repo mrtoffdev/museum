@@ -1,0 +1,262 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel2::l:::x}"
+			"$verticalGroup": "par l {seq t {space :0:0:x, comp panel2:::p:546:p}}"
+		} ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 865, 545 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :0:0:p, comp Panel_Listing:::::x, space :p:25:p, comp Panel_Checkout:::p::p}}"
+				"$verticalGroup": "par l {seq l {space :0:0:p, par l:::p {comp Panel_Listing:::::x, comp Panel_Checkout:::p:547:p}}}"
+			} ) {
+				name: "panel2"
+				"background": new java.awt.Color( 14, 14, 14, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space :p:30:p, par t {comp AddItem::::769:x, seq l {comp Header4:::p::p, space s:::p, comp SortByName:::p:66:p, space u:::p, comp SortByPrice:::p:66:p, space u:::p, comp SortByStock:::p:66:p, space ::77:x, comp ListingSearchField:::p:375:p, space :0:0:p, comp ListingSearchBtn:::p:30:p}, seq l {par t {comp label2:::p::p, comp Header3:::p::p}, space :p:190:p, comp label3:::p::p, space :p:66:p, comp label4:::p::p, space :p:99:p, comp label5:::p::p, space :0:246:x}, comp ListingScrollView::l:::x}, space :p:30:p}}"
+					"$verticalGroup": "par l {seq {space :p:30:p, comp Header3:::p::p, par t {seq {space :::p, par l {comp ListingSearchBtn:::p:30:p, comp ListingSearchField:::p:30:p}}, par l {seq {space :p:21:p, par b {comp SortByName::b:p:25:p, comp SortByPrice::b:p:25:p, comp SortByStock::b:p:25:p}}, seq t {space :::p, comp Header4:::p::p}}}, space s:::p, par l {comp label2:::p::p, comp label3:::p::p, comp label4::l:p::p, comp label5::l:p:16:p}, space u:::p, comp ListingScrollView:::p:326:p, space :p:10:p, comp AddItem:::p::p, space :p:30:p}}"
+				} ) {
+					name: "Panel_Listing"
+					"background": new java.awt.Color( 22, 22, 22, 255 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "ListingSearchField"
+						"background": new java.awt.Color( 39, 39, 39, 255 )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"toolTipText": "Search"
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"highlighter": new FormReference( "null" )
+						addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "ListingSearchHasQuery", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "Header3"
+						"font": new java.awt.Font( "Segoe UI", 1, 18 )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"text": "Listing"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "ListingSearchBtn"
+						"background": new java.awt.Color( 36, 36, 36, 255 )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"focusPainted": false
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "SearchList", true ) )
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "ListingScrollView"
+						"background": new java.awt.Color( 30, 30, 30, 255 )
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"foreground": new java.awt.Color( 30, 30, 30, 255 )
+						"horizontalScrollBar": new FormReference( "null" )
+						"horizontalScrollBarPolicy": 31
+						add( new FormComponent( "Loot.res.component.list.lx_InventoryList" ) {
+							name: "InventoryList"
+							"background": new java.awt.Color( 22, 22, 22, 255 )
+							auxiliary() {
+								"JavaCodeGenerator.typeParameters": "ItemViewCtx"
+							}
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "InventoryListSelect", true ) )
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "Header4"
+						"font": new java.awt.Font( "Segoe UI", 0, 14 )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"text": "Sort By:"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "SortByName"
+						"text": "Name"
+						"background": new java.awt.Color( 39, 39, 39, 255 )
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"foreground": sfield java.awt.Color white
+						"focusPainted": false
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "SortByName", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "SortByPrice"
+						"text": "Price"
+						"background": new java.awt.Color( 39, 39, 39, 255 )
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"focusPainted": false
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "SortByPrice", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "SortByStock"
+						"text": "Stock"
+						"background": new java.awt.Color( 39, 39, 39, 255 )
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"foreground": sfield java.awt.Color white
+						"focusPainted": false
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "SortByStock", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "Name:"
+						"foreground": &Color0 new java.awt.Color( 255, 255, 255, 255 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "Stock:"
+						"foreground": #Color0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "Category:"
+						"foreground": #Color0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": "Price:"
+						"foreground": #Color0
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "AddItem"
+						"text": "Add New Item"
+						"background": new java.awt.Color( 22, 22, 22, 255 )
+						"border": new javax.swing.border.EmptyBorder( 5, 0, 5, 0 )
+						"focusPainted": false
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"font": new java.awt.Font( "Segoe UI", 0, 14 )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "AddItemMouseClicked", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:30:p, par l {comp Header5:::::x, comp panel1:::::x}, space :p:30:p}, seq t {space :0:0:x, comp SaveItem:::p:296:p}}"
+					"$verticalGroup": "par l {seq t {space :p:28:p, comp Header5:::p::p, space s:::p, comp panel1:::p::p, space :::x, comp SaveItem:::p:50:p}}"
+				} ) {
+					name: "Panel_Checkout"
+					"background": new java.awt.Color( 22, 22, 22, 255 )
+					"minimumSize": new java.awt.Dimension( 500, 700 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "SaveItem"
+						"background": new java.awt.Color( 20, 20, 20, 255 )
+						"font": new java.awt.Font( "Segoe UI", 0, 18 )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"text": "Save Item"
+						"border": new javax.swing.border.LineBorder( new java.awt.Color( 48, 48, 48, 255 ), 2, false )
+						"focusPainted": false
+						"maximumSize": new java.awt.Dimension( 296, 50 )
+						"minimumSize": new java.awt.Dimension( 296, 50 )
+						"requestFocusEnabled": false
+						"rolloverEnabled": false
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "SaveItem", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "Header5"
+						"font": new java.awt.Font( "Segoe UI", 1, 18 )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"text": "Editor:"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {comp ItemNameField:::::x, seq l {comp label6:::p::p, space :::x, comp label7:::p::p, space :p:78:p}, seq t {par l {comp ItemStockField::l:p:101:p, comp label12::l:p::p, comp ItemIDLabel::l:p::p}, space :::x, par l {comp label14:::p::p, comp CategIDLabel:::p::p, comp ItemPriceField:::p:107:p}}, comp ItemSplashImg::l:::x, seq {par l {comp label1:::p::p, comp label10:::p::p, comp label8::l:p::p}, space :::x}, comp CategoryLabel::l:::x}"
+						"$verticalGroup": "par l {seq l {space :p:15:p, comp label1:::p::p, space :::p, comp ItemNameField:::p::p, space s:::p, par b {comp label6::b:p::p, comp label7::b:p::p}, space :::p, par b {comp ItemStockField::b:p::p, comp ItemPriceField::b:p::p}, space :p:18:p, comp label8:::p::p, space :::p, comp CategoryLabel:::::x, space s:::p, par t {seq {comp label12:::p::p, space :::p, comp ItemIDLabel:::p::p}, seq {comp label14:::p::p, space :6:6:p, comp CategIDLabel:::p::p}}, space :p:20:p, comp label10:::p::p, space :::p, comp ItemSplashImg:::p:113:p}}"
+					} ) {
+						name: "panel1"
+						"background": new java.awt.Color( 22, 22, 22, 255 )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "ItemNameField"
+							"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"background": &Color1 new java.awt.Color( 22, 22, 22, 255 )
+							"foreground": &Color2 new java.awt.Color( 255, 255, 255, 255 )
+							"font": new java.awt.Font( "Segoe UI", 1, 14 )
+							"text": "No Item Selected"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label1"
+							"text": "Name:"
+							"foreground": &Color3 new java.awt.Color( 255, 255, 255, 255 )
+							"background": new java.awt.Color( 22, 22, 22, 255 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label6"
+							"text": "Stock:"
+							"foreground": #Color3
+							"background": new java.awt.Color( 22, 22, 22, 255 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label7"
+							"text": "Price:"
+							"foreground": #Color3
+							"background": new java.awt.Color( 22, 22, 22, 255 )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "ItemStockField"
+							"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"background": #Color1
+							"foreground": #Color2
+							"font": &Font0 new java.awt.Font( "Segoe UI", 0, 14 )
+							"text": "0"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "ItemPriceField"
+							"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"background": #Color1
+							"foreground": #Color2
+							"font": #Font0
+							"text": "0.00"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label8"
+							"text": "Category:"
+							"foreground": #Color3
+							"background": &Color4 new java.awt.Color( 22, 22, 22, 255 )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "SetCategory", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "CategoryLabel"
+							"text": "No Item Selected"
+							"font": new java.awt.Font( "Segoe UI", 1, 14 )
+							"foreground": &Color5 new java.awt.Color( 255, 255, 255, 255 )
+							"background": new java.awt.Color( 31, 31, 31, 255 )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "SetCategory", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label10"
+							"text": "Splash Image:"
+							"foreground": #Color3
+							"background": #Color4
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "ItemSplashImg"
+							"background": new java.awt.Color( 22, 22, 22, 255 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label12"
+							"text": "ItemID:"
+							"foreground": #Color3
+							"background": #Color4
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "ItemIDLabel"
+							"text": "No Item Selected"
+							"font": &Font1 new java.awt.Font( "Segoe UI", 0, 12 )
+							"foreground": #Color5
+							"background": &Color6 new java.awt.Color( 22, 22, 22, 255 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label14"
+							"text": "CategID:"
+							"foreground": #Color3
+							"background": #Color4
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "CategIDLabel"
+							"text": "No Item Selected"
+							"font": #Font1
+							"foreground": #Color5
+							"background": #Color6
+						} )
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1150, 545 )
+		} )
+	}
+}

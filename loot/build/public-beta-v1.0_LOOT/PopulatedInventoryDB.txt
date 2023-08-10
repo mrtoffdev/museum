@@ -1,0 +1,17 @@
+The Kingmaker:200.0:0:15:0:null
+Item Name 1:230.0:2:18:2:null
+Love Eyelashes:99.0:5:10::null
+Atlantic Cruise:35000.0:6:12:2:null
+Niveo Deodorant:95.0:14:5:1:null
+She's Dating The Gangster:150.0:20:14:2:null
+Black Coffee Powder:50.0:30:3:3:null
+Crab and Corn Soup:25.99:0:4:0:null
+Callgate Toothpaste:30.0:0:11::null
+Blue Horse Beer:29.55:0:9:0:null
+Cannonically Large Spoon:15.89:67:16:1:null
+Coffee Mug:59.99:12:19::null
+++
+Food & Organic:0
+Hygiene:1
+Tickets:2
+New Category:3

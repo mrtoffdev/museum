@@ -1,0 +1,91 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp Dashboard_Panel::l:::x}"
+			"$verticalGroup": "par l {comp Dashboard_Panel::l:p:729:p}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"bounds": new java.awt.Rectangle( 0, 0, 0, 0 )
+			"maximizedBounds": new java.awt.Rectangle( 0, 0, 0, 0 )
+			"minimumSize": new java.awt.Dimension( 1295, 750 )
+			"name": "Loot"
+			"size": new java.awt.Dimension( 1280, 720 )
+			"$sizePolicy": 1
+			"resizable": false
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowClosed", "thisWindowClosed", true ) )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:50:p, par l {comp ViewFinder:::::x, seq {comp Panel_Toolbar:::::x, space :::p, comp bt_Inventory:::p:50:p, space :::p, comp bt_SignOut:::p:50:p, space :p:25:p, comp Panel_Points:::p::p}}, space :p:50:p}}"
+				"$verticalGroup": "par l {seq {space :p:40:p, par l {comp Panel_Points:::p::p, comp bt_SignOut::l:p:50:p, comp bt_Inventory::l:p:50:p, comp Panel_Toolbar::l:p::p}, space :p:20:p, comp ViewFinder:::p::p, space :p:67:p}}"
+			} ) {
+				name: "Dashboard_Panel"
+				"background": new java.awt.Color( 14, 14, 14, 255 )
+				"minimumSize": new java.awt.Dimension( 1280, 720 )
+				"preferredSize": new java.awt.Dimension( 1280, 720 )
+				"maximumSize": new java.awt.Dimension( 1280, 720 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:30:p, comp Login_Name:::p::p, space ::673:x}}"
+					"$verticalGroup": "par l {seq t {space :0:0:x, comp Login_Name:::p:50:p}}"
+				} ) {
+					name: "Panel_Toolbar"
+					"background": new java.awt.Color( 22, 22, 22, 255 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "Login_Name"
+						"font": new java.awt.Font( "Segoe UI", 0, 15 )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"text": "Admin"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space ::29:x, comp Login_Name1:::p:155:p, space ::112:x}}"
+					"$verticalGroup": "par l {comp Login_Name1::t::50:x}"
+				} ) {
+					name: "Panel_Points"
+					"background": new java.awt.Color( 22, 22, 22, 255 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "Login_Name1"
+						"font": new java.awt.Font( "Segoe UI", 0, 15 )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"text": "Loot Inventory System"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :0:0:p, comp InventoryPanel::::0:x, space :0:0:p, comp DashboardPanel::l::0:x, space :0:0:p}}"
+					"$verticalGroup": "par l {seq {par l {comp DashboardPanel:::::p, comp InventoryPanel::l:p::p}, space :0:0:p}}"
+				} ) {
+					name: "ViewFinder"
+					"background": new java.awt.Color( 14, 14, 14, 255 )
+					add( new FormComponent( "Loot.res.component.view.panel.DashboardView" ) {
+						name: "DashboardPanel"
+					} )
+					add( new FormComponent( "Loot.res.component.view.panel.InventoryView" ) {
+						name: "InventoryPanel"
+						"visible": false
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "bt_SignOut"
+					"focusPainted": false
+					"background": &Color0 new java.awt.Color( 22, 22, 22, 255 )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "SignOut", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "bt_Inventory"
+					"focusPainted": false
+					"background": #Color0
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "SwitchToInv", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 1280, 760 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

@@ -1,0 +1,5 @@
+Wooden Spoon:100.0:35:1::null
+Welding Mask:340.55:2:2::null
+Crafting Table:450.0:15:5::null
+Diamond Pickaxe:999.0:0:4::null
+++

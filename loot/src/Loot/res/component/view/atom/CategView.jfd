@@ -1,0 +1,39 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::l:p::p}"
+			"$verticalGroup": "par l {seq l {comp panel1:::p::p, space :p:9:p}}"
+		} ) {
+			name: "this"
+			"preferredSize": new java.awt.Dimension( 211, 80 )
+			"background": new java.awt.Color( 22, 22, 22, 255 )
+			"foreground": new java.awt.Color( 26, 26, 26, 255 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:20:p, par l {comp cv_CategItems:::p:128:p, comp cv_CategName:::p:169:p}, space ::22:x}}"
+				"$verticalGroup": "par l {seq l {space :p:20:p, comp cv_CategName:::p::p, space :p:2:p, comp cv_CategItems:::p::p, space :p:20:p}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 26, 26, 26, 255 )
+				"foreground": new java.awt.Color( 26, 26, 26, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "cv_CategName"
+					"text": "Category Name"
+					"font": new java.awt.Font( "Segoe UI", 1, 13 )
+					"foreground": &Color0 new java.awt.Color( 255, 255, 255, 255 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "cv_CategItems"
+					"text": "ItemCount"
+					"font": new java.awt.Font( "Segoe UI", 0, 12 )
+					"foreground": #Color0
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 20, 0 )
+			"size": new java.awt.Dimension( 210, 85 )
+		} )
+	}
+}

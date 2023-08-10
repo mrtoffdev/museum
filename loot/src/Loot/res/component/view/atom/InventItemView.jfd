@@ -1,0 +1,64 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {comp panel1:::::x, space :0:0:x}}"
+			"$verticalGroup": "par l {seq l {comp panel1:::::x, space :::p}}"
+		} ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 214, 45 )
+			"preferredSize": new java.awt.Dimension( 400, 45 )
+			"background": new java.awt.Color( 22, 22, 22, 255 )
+			"maximumSize": new java.awt.Dimension( 770, 45 )
+			"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :p:19:p, comp Name:::p:233:p, space :::p, comp Stock:::p:88:p, space :::p, comp Category:::p:121:p, par l {seq {space ::145:x, comp ImageSplash:::p:146:p, space :::p}, seq l {space :p:30:p, comp jLabel4:::p::p, space :::p, comp Price:::p:79:p, space ::174:x}}}}"
+				"$verticalGroup": "par l {seq {par l {seq {space :p:7:p, par b {comp Stock::b:::p, comp Category::b:::p, comp Name::b:::p, comp jLabel4::b:p::p, comp Price::b:p:25:p}}, comp ImageSplash::l:::p}, space :p:7:p}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 26, 26, 26, 255 )
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Name"
+					"font": new java.awt.Font( "Segoe UI", 1, 12 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"text": "Item Name"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Stock"
+					"font": &Font0 new java.awt.Font( "Segoe UI", 0, 14 )
+					"foreground": &Color0 new java.awt.Color( 255, 255, 255, 255 )
+					"text": "12"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Category"
+					"font": #Font0
+					"foreground": #Color0
+					"text": "Item"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Price"
+					"font": #Font0
+					"foreground": #Color0
+					"text": "00.00"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabel4"
+					"font": new java.awt.Font( "Segoe UI", 0, 14 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"horizontalAlignment": 4
+					"text": "₱"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "ImageSplash"
+					"background": new java.awt.Color( 50, 49, 49, 255 )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 770, 45 )
+		} )
+	}
+}

@@ -1,0 +1,63 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+			name: "this"
+			"background": new java.awt.Color( 22, 22, 22, 255 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {par t {seq {space :0:0:x, comp Header2:::p::p, space :p:147:p}, seq {space :p:30:p, par t {comp CategScrollView::l::0:x, seq l {comp Header1:::p::p, space :0:0:x}, seq t {comp CategSearchField::::190:x, space :0:0:p, comp CategSearchBtn:::p:30:p}}}}, space :p:30:p}}"
+				"$verticalGroup": "par l {seq l {space :p:30:p, comp Header1:::p::p, space :p:25:p, comp Header2:::p::p, space :p:18:p, par t {comp CategSearchField:::p:30:p, comp CategSearchBtn:::p:30:p}, space s:::p, comp CategScrollView:::p:348:p, space :p:31:p}}"
+			} ) {
+				name: "Panel_Categories"
+				"background": new java.awt.Color( 22, 22, 22, 255 )
+				"preferredSize": new java.awt.Dimension( 280, 546 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Header1"
+					"font": new java.awt.Font( "Segoe UI", 1, 18 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"text": "Set Category:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Header2"
+					"font": new java.awt.Font( "Segoe UI", 0, 14 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"text": "Categories"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "CategScrollView"
+					"background": new java.awt.Color( 22, 22, 22, 255 )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"foreground": new java.awt.Color( 22, 22, 22, 255 )
+					add( new FormComponent( "Loot.res.component.list.lx_CategList" ) {
+						name: "CategListView"
+						"background": new java.awt.Color( 22, 22, 22, 255 )
+						auxiliary() {
+							"JavaCodeGenerator.typeParameters": "CategViewCtx"
+						}
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "CategListSelect", true ) )
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "CategSearchField"
+					"foreground": sfield java.awt.Color black
+					"toolTipText": "Search"
+					"border": new javax.swing.border.EmptyBorder( 0, 10, 0, 0 )
+					"highlighter": new FormReference( "null" )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "CategSearchBtn"
+					"background": new java.awt.Color( 36, 36, 36, 255 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"focusPainted": false
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "CategSearchCall", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 290, 585 )
+		} )
+	}
+}

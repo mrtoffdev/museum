@@ -1,0 +1,117 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel4::t:::x}"
+			"$verticalGroup": "par l {comp panel4::l:::x}"
+		} ) {
+			name: "this"
+			"modal": true
+			"background": new java.awt.Color( 14, 14, 14, 255 )
+			"undecorated": true
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:20:p, comp panel1:::p::p, space ::20:x}}"
+				"$verticalGroup": "par l {seq l {space :p:20:p, comp panel1:::p::p, space :p:20:p}}"
+			} ) {
+				name: "panel4"
+				"background": new java.awt.Color( 24, 24, 24, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {comp panel3::t:::x, comp AddItem::l:::x, seq {space :p:26:p, par l {comp ItemName:::p:127:p, seq l {comp jLabel4:::p::p, space :p:3:p, comp TotalCost:::p:80:p, space :::p, comp Stock:::p:80:p}}, space :::x}, seq l {comp Cancel:::p:33:p, space :0:205:x}, comp label1::t::238:x}"
+					"$verticalGroup": "par l {seq l {comp Cancel:::p:31:p, space ::11:x, comp label1:::p:116:p, space u:::p, comp ItemName:::p:20:p, space :::p, par b {comp jLabel4::b:p::p, comp TotalCost::b:p::p, comp Stock::b:p::p}, space :::p, comp panel3:::p::p, space :p:10:p, comp AddItem:::p:43:p}}"
+				} ) {
+					name: "panel1"
+					"background": new java.awt.Color( 22, 22, 22, 255 )
+					"border": new javax.swing.border.EmptyBorder( 0, 0, 0, 0 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ItemName"
+						"font": new java.awt.Font( "Segoe UI", 1, 13 )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"text": "Item Name"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "Stock"
+						"foreground": &Color0 new java.awt.Color( 255, 255, 255, 255 )
+						"text": "0"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq t {space :p:20:p, comp CustomCount::::85:x, space :p:8:p, comp IncItem:::p:25:p, space :::p, comp DecItem:::p:25:p, space :::p, comp GrabAll:::p:43:p, space :p:20:p}}"
+						"$verticalGroup": "par l {seq l {space :::p, par b {comp CustomCount::b:p:25:p, comp IncItem::b:p:25:p, comp DecItem::b:p:25:p, comp GrabAll::b:p:25:p}, space :::p}}"
+					} ) {
+						name: "panel3"
+						"background": new java.awt.Color( 22, 22, 22, 255 )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "CustomCount"
+							"border": new javax.swing.border.EmptyBorder( 0, 4, 0, 0 )
+							"background": new java.awt.Color( 39, 39, 39, 255 )
+							"text": "1"
+							"foreground": new java.awt.Color( 255, 255, 255, 255 )
+							addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "CustomCountKeyReleased", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "IncItem"
+							"background": new java.awt.Color( 39, 39, 39, 255 )
+							"focusPainted": false
+							"foreground": new java.awt.Color( 255, 255, 255, 255 )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "IncItem", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "DecItem"
+							"background": &Color1 new java.awt.Color( 39, 39, 39, 255 )
+							"focusPainted": false
+							"foreground": &Color2 new java.awt.Color( 255, 255, 255, 255 )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "DecItem", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "GrabAll"
+							"background": #Color1
+							"focusPainted": false
+							"foreground": #Color2
+							"font": new java.awt.Font( "Segoe UI", 1, 10 )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "GrabAll", true ) )
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "TotalCost"
+						"foreground": #Color0
+						"text": "0.00"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "jLabel4"
+						"font": new java.awt.Font( "Segoe UI", 0, 14 )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"horizontalAlignment": 4
+						"text": "₱"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Cancel"
+						"background": new java.awt.Color( 22, 22, 22, 255 )
+						"focusPainted": false
+						"foreground": sfield java.awt.Color white
+						"border": new javax.swing.border.EmptyBorder( 0, 0, 0, 0 )
+						"text": "X"
+						"font": new java.awt.Font( "Segoe UI", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "onClose", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "AddItem"
+						"text": "ADD ITEM"
+						"background": new java.awt.Color( 39, 39, 39, 255 )
+						"focusPainted": false
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"border": new javax.swing.border.EmptyBorder( 0, 0, 0, 0 )
+						"font": new java.awt.Font( "Segoe UI", 0, 14 )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "AddItem", true ) )
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 280, 385 )
+		} )
+	}
+}

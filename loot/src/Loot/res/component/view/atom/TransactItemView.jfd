@@ -1,0 +1,52 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::t:::x}"
+			"$verticalGroup": "par l {seq l {comp panel1:::::x, space :::p}}"
+		} ) {
+			name: "this"
+			"preferredSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+			"background": new java.awt.Color( 22, 22, 22, 255 )
+			"foreground": new java.awt.Color( 22, 22, 22, 255 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:21:p, par l {seq {comp ItemName:::p:127:p, space ::247:x}, seq {comp jLabel4:::p::p, space :p:2:p, comp ItemPrice::::44:x, space u:::p, comp ItemStock::::73:x, space :p:235:p}}}}"
+				"$verticalGroup": "par l {seq l {space :p:16:p, comp ItemName:::p:20:p, space :p:2:p, par l {comp jLabel4:::p::p, par b {comp ItemPrice::b:p::p, comp ItemStock::b:p::p}}, space :p:16:p}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 26, 26, 26, 255 )
+				"foreground": new java.awt.Color( 26, 26, 26, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabel4"
+					"font": new java.awt.Font( "Segoe UI", 0, 14 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"horizontalAlignment": 4
+					"text": "₱"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "ItemPrice"
+					"font": new java.awt.Font( "Segoe UI", 0, 14 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"text": "00.00"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "ItemName"
+					"font": new java.awt.Font( "Segoe UI", 1, 13 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"text": "Item Name"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "ItemStock"
+					"foreground": new java.awt.Color( 235, 159, 66, 255 )
+					"text": "Stock"
+					"font": new java.awt.Font( "Segoe UI", 0, 14 )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 395, 80 )
+		} )
+	}
+}

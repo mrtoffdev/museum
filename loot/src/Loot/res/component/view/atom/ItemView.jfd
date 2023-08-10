@@ -1,0 +1,56 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp jPanel1:::::x}"
+			"$verticalGroup": "par l {comp jPanel1:::p::p}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 22, 22, 22, 255 )
+			"maximumSize": new java.awt.Dimension( 515, 81 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {comp iv_SelectedIndicator:::p:5:p, space :p:30:p, par l {seq {comp iv_ItemName:::p:127:p, space :p:27:p, comp jLabel4:::p::p, space :p:2:p, comp iv_ItemPrice:::p:79:p}, comp iv_ItemStock:::p:155:p}, space ::72:x, comp iv_ItemSplash:::p:124:p}}"
+				"$verticalGroup": "par l {seq {par l {comp iv_ItemSplash::l:p:75:p, comp iv_SelectedIndicator::l:p:77:p, seq l {space :p:20:p, par l {par b:l {comp jLabel4::b:p::p, comp iv_ItemPrice::b:p:20:p}, comp iv_ItemName:::p:20:p}, comp iv_ItemStock:::p::p}}, space :0:0:p}}"
+			} ) {
+				name: "jPanel1"
+				"background": new java.awt.Color( 26, 26, 26, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "iv_ItemPrice"
+					"font": new java.awt.Font( "Segoe UI", 0, 14 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"text": "00.00"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "iv_ItemStock"
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"text": "Stock"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "iv_ItemName"
+					"font": new java.awt.Font( "Segoe UI", 1, 13 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"text": "Item Name"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabel4"
+					"font": new java.awt.Font( "Segoe UI", 0, 14 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"horizontalAlignment": 4
+					"text": "₱"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "iv_ItemSplash"
+					"background": new java.awt.Color( 255, 255, 255, 255 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "iv_SelectedIndicator"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 474, 80 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}
